@@ -7,20 +7,23 @@
 /*#77ffc0 verde
 #201b2c fundo
 */
-
+*{
+   box-sizing: border-box;
+}
 body{
     margin: 0;
+    overflow-x: hidden;
+    font-family: "roboto", sans-serif;
 }
 .main{
-    width: 100vw;
-    height: 100vh;
     background-color: #201b2c;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .image{
-    width: 25vw;
+    width: 90%;
+    height: 60%;
 }
  .left-login{
     width: 50vw;
@@ -32,7 +35,9 @@ body{
  }
  .left-login > h1{
     color:#77ffc0 ;
-    font-size: 25px;
+    font-size: 150%;
+    width: 100%;
+    text-align: center;
     text-transform: uppercase;
  }
  .rigth-login{
@@ -76,7 +81,23 @@ body{
     width: 80px;
     height: 35px;
     border-radius: 5px;
+    font-weight: 700;
     color: #201b2c;
     text-transform: uppercase;
     cursor: pointer;
  }
+ /* -------------- MEDIA QUERIES ---------------*/
+   @media(max-width: 730px){
+      main{
+         display: flex;
+         flex-direction: column;
+      }
+      .rigth-login{
+         width: 100vw;
+      }
+      .left-login{
+         width: 100vw;
+      }.left-login > h1{
+         margin: 20px;
+      }
+   }
