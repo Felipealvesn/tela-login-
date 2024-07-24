@@ -100,4 +100,26 @@ body{
       }.left-login > h1{
          margin: 20px;
       }
+      .card-login{
+         width: 50%;
+      }
+   }
+   @media(max-width: 520px){
+      .card-login{
+         width: 70%;
+      }
+   }
+   @media(max-width: 460px){
+      .left-login > h1{
+        font-size: 120%;
+      }
+      .left-login{
+        height: 70vh;
+      }
+   }
+   @media(max-width: 360px){
+      .card-login{
+         width: 90%;
+         padding: 30px 25px;
+      }
    }
